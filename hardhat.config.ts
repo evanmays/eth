@@ -74,6 +74,49 @@ const mainnet = {
   chainId: 1,
 };
 
+const tenAccounts = [
+  {
+    privateKey: '0x00195c933ff445314e667112ab22f4a7404bad7f9746564eb409b9bb8c6aed32',
+    balance: '100000000000000000000',
+  },
+  {
+    privateKey: '0x01195c933ff445314e667112ab22f4a7404bad7f9746564eb409b9bb8c6aed32',
+    balance: '100000000000000000000',
+  },
+  {
+    privateKey: '0x02195c933ff445314e667112ab22f4a7404bad7f9746564eb409b9bb8c6aed32',
+    balance: '100000000000000000000',
+  },
+  {
+    privateKey: '0x03195c933ff445314e667112ab22f4a7404bad7f9746564eb409b9bb8c6aed32',
+    balance: '100000000000000000000',
+  },
+  {
+    privateKey: '0x04195c933ff445314e667112ab22f4a7404bad7f9746564eb409b9bb8c6aed32',
+    balance: '100000000000000000000',
+  },
+  {
+    privateKey: '0x05195c933ff445314e667112ab22f4a7404bad7f9746564eb409b9bb8c6aed32',
+    balance: '100000000000000000000',
+  },
+  {
+    privateKey: '0x06195c933ff445314e667112ab22f4a7404bad7f9746564eb409b9bb8c6aed32',
+    balance: '100000000000000000000',
+  },
+  {
+    privateKey: '0x07195c933ff445314e667112ab22f4a7404bad7f9746564eb409b9bb8c6aed32',
+    balance: '100000000000000000000',
+  },
+  {
+    privateKey: '0x08195c933ff445314e667112ab22f4a7404bad7f9746564eb409b9bb8c6aed32',
+    balance: '100000000000000000000',
+  },
+  {
+    privateKey: '0x09195c933ff445314e667112ab22f4a7404bad7f9746564eb409b9bb8c6aed32',
+    balance: '100000000000000000000',
+  },
+]
+
 const config: HardhatUserConfig = {
   defaultNetwork: 'hardhat',
   networks: {
@@ -108,6 +151,7 @@ const config: HardhatUserConfig = {
           privateKey: '0x67195c963ff445314e667112ab22f4a7404bad7f9746564eb409b9bb8c6aed32',
           balance: '100000000000000000000',
         },
+        ...tenAccounts
       ],
       blockGasLimit: 16777215,
     },

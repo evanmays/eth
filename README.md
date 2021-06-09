@@ -1,3 +1,9 @@
+# Why I forked
+
+This fork has one commit. This commit modifies to create a preset 10 accounts which the AI code will use as constant accounts.
+
+I also turned off ZK checks in the smart contract code. This let's us save CPU compute. If you're going to deploy dark forest on a real blockchain in prod you probably shouldn't do this.
+
 # Dark Forest Smart Contracts
 
 ## Development Guide
